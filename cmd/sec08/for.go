@@ -19,7 +19,7 @@ func main() {
 		point++
 	}
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 30; i++ {
 		if i == 3 {
 			fmt.Println(3)
 			continue
