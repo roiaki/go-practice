@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func init() {
-	fmt.Println("init1")
+    fmt.Println("init1")
 }
 
 func init() {
-	fmt.Println("init2")
+    fmt.Println("init2")
 }
 
 func main() {
-	fmt.Println("Main")
+    fmt.Println("Main")
 }

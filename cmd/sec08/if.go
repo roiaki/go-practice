@@ -1,16 +1,16 @@
 package main
 
 import (
-	"fmt"
-	"strconv"
+    "fmt"
+    "strconv"
 )
 
 func main() {
-	var s string = "A"
+    var s string = "A"
 
-	i, err := strconv.Atoi(s)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Printf("i = %T\n", i)
+    i, err := strconv.Atoi(s)
+    if err != nil {
+        fmt.Println(err)
+    }
+    fmt.Printf("i = %T\n", i)
 }
