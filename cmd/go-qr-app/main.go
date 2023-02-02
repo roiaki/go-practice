@@ -24,15 +24,15 @@ func main() {
     // stringのポインタを返す
     outputPath := flag.String("o", "./image.png", "Path to output file")
     width      := flag.Int("w", 200, "Width of the output image of the QR Code (px)")
-	depth      := flag.Int("d", 200, "height of the output image of the QR Code (px)")
+    depth      := flag.Int("d", 200, "height of the output image of the QR Code (px)")
 
     flag.Parse()
-	url := flag.Arg(0)
+    url := flag.Arg(0)
 
-	if url == "" {
-		fmt.Println("URL is empty")
-		return
-	}
+    if url == "" {
+        fmt.Println("URL is empty")
+        return
+    }
 
     // flag.Parse()はstringのポインタを返すので*を付ける
     file, err := os.Create(*outputPath)
