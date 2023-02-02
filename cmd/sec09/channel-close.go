@@ -5,14 +5,22 @@ import (
     "time"
 )
 
+func reciever(c chan int) {
+    for {
+        i := <-c
+        fmt.Println(i)
+    }
+}
 
 func main() {
+    var ch1 chan int
+   
+    ch1 = make(chan int)
 
-    ch1 := make(chan int)
-    ch2 := make(chan int)
+    ch1 <- 1
 
-    go reciever1(ch1)
-    go reciever1(ch2)
+    go reciever(ch1)
+    go reciever(ch2)
 
     i := 0
     for i < 100 {
